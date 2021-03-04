@@ -14,4 +14,5 @@ data class User( @field:SerializedName("id")
 
                  @field:SerializedName("email")
                  var email: String ) : Serializable {
+    constructor() : this(0,"","","")
 }
