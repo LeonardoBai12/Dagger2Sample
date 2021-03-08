@@ -2,4 +2,6 @@
     <string name="app_name">DaggerSample</string>
     <string name="logout">logout</string>
     <string name="error">error</string>
+    <string name="profile">profile</string>
+    <string name="posts">posts</string>
 </resources>
