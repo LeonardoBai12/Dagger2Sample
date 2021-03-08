@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".main.MainActivity" />
+        <activity android:name="com.example.daggersample.ui.main.MainActivity" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

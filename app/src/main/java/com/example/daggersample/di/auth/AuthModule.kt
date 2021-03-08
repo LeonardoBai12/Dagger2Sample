@@ -1,6 +1,6 @@
 package com.example.daggersample.di.auth
 
-import com.example.daggersample.network.auth.AuthApi
+import com.example.daggersample.network.auth.AuthRepository
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -8,7 +8,7 @@ import retrofit2.Retrofit
 @Module
 class AuthModule {
     @Provides
-    fun providesAuthApi(retrofit: Retrofit) : AuthApi{
-        return retrofit.create(AuthApi::class.java)
+    fun providesAuthApi(retrofit: Retrofit) : AuthRepository{
+        return retrofit.create(AuthRepository::class.java)
     }
 }

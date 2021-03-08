@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">DaggerSample</string>
     <string name="logout">logout</string>
+    <string name="error">error</string>
 </resources>

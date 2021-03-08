@@ -8,18 +8,12 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
-import android.widget.TextView
 import androidx.activity.viewModels
-import androidx.annotation.IntegerRes
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
-import androidx.lifecycle.get
 import com.bumptech.glide.RequestManager
 import com.example.daggersample.R
-import com.example.daggersample.main.MainActivity
+import com.example.daggersample.ui.main.MainActivity
 import com.example.daggersample.models.User
-import com.example.daggersample.viewmodels.ViewModelProviderFactory
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 

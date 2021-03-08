@@ -8,7 +8,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-interface AuthApi {
+interface AuthRepository {
     @GET(Constants.FILTER)
     fun getUser( @Path("id") id : Int) : Flowable<User>
 }

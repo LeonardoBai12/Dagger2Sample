@@ -3,12 +3,12 @@ package com.example.daggersample.ui.auth
 import androidx.lifecycle.*
 import com.example.daggersample.SessionManager
 import com.example.daggersample.models.User
-import com.example.daggersample.network.auth.AuthApi
+import com.example.daggersample.network.auth.AuthRepository
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 
-class AuthViewModel @Inject constructor(private val authApi: AuthApi,
+class AuthViewModel @Inject constructor(private val authApi: AuthRepository,
                                         private val sessionManager: SessionManager) : ViewModel() {
 
     fun authenticateWithId(userId: Int) {
@@ -35,7 +35,6 @@ class AuthViewModel @Inject constructor(private val authApi: AuthApi,
 
     fun observeAuthState(): LiveData<AuthResource<User>> {
         return sessionManager.cachedUser
-
     }
 
 }

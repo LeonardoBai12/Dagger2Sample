@@ -1,18 +1,25 @@
-package com.example.daggersample.main
+package com.example.daggersample.ui.main
 
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuInflater
 import android.view.MenuItem
 import com.example.daggersample.BaseActivity
 import com.example.daggersample.R
-import dagger.android.support.DaggerAppCompatActivity
+import com.example.daggersample.ui.main.posts.PostFragment
+import com.example.daggersample.ui.main.profile.ProfileFragment
 
 class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        testFragment();
+    }
+
+    fun testFragment(){
+        supportFragmentManager.beginTransaction()
+                .replace(R.id.main_container, PostFragment())
+                .commit();
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
