@@ -7,12 +7,12 @@ data class Post(@field:SerializedName("userId")
                  var userId : Int,
 
                  @field:SerializedName("id")
-                  var id : Int,
+                 var id : Int,
 
-                  @field:SerializedName("title")
-                  var title : String,
+                 @field:SerializedName("title")
+                 var title : String,
 
-                  @field:SerializedName("body")
-                  var body : String ) : Serializable {
+                 @field:SerializedName("body")
+                 var body : String ) : Serializable {
     constructor() : this(0,0,"","")
 }
