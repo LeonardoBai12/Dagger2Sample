@@ -14,7 +14,6 @@ public class AuthResource<T> {
     @Nullable
     public final String message;
 
-
     public AuthResource(@NonNull AuthStatus status, @Nullable T data, @Nullable String message) {
         this.status = status;
         this.data = data;
